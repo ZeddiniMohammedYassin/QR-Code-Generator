@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+  <title>Dynamic QR Code Generator</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="FileSaver.min.js"></script>
+  
+</head>
+<body>
+  <div class="container" id="container">
+    <p class="paragraph">
+      Enter your text or URL
+    </p>
+    <input type="text" placeholder="Text or URL" id="qrText">
+    <div id="hide-img">
+    <p><small hidden>*Enter text or URL first.</small></p>
+    
+    <div id="imgBox">
+      <img src="" id="qrImg">
+    </div>
+  </div>
+    <div class="button-container">
+      <button onclick="qr()">Generate QR Code</button>
+      <button onclick="qrDownload()">Download QR Code</button>
+    </div>
+  </div>
+</body>
+</html>
